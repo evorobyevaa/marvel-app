@@ -19,7 +19,7 @@ const App = () => {
         <main className="main">
           <Suspense fallback={<Spinner/>}>
             <Routes>
-              <Route path="/marvel-app" element={<MainPage/>}/>
+              <Route path="/marvel-app/" element={<MainPage/>}/>
               <Route path="/marvel-app/comics" element={<ComicsPage/>}/>
               <Route path="/marvel-app/comics/:id" element={<SinglePage Component={SingleComicLayout} dataType='comic' />}/>
               <Route path="/marvel-app/characters/:id" element={<SinglePage Component={SingleCharacterLayout} dataType='character' />}/>
